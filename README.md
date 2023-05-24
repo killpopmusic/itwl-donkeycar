@@ -7,10 +7,10 @@ to the issues that occurred during the process
 
 If errors occure during the connection process make sure the RPI's OS is up to date. In RPI's terminal enter:
 
-...bash
+'''bash
 sudo apt update
 sudo apt upgrade
-...
+'''
 
 Check if SSH is active 
 

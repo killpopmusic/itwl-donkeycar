@@ -1,5 +1,6 @@
-# Instrukcja uruchomienia robota Waveshare Pircaer z poziomu komputera z systemem Windows
-Do zdalnego sterowania robotem wymagany jest komputer podłączony do tej samej sieci WIFI co płytka Raspberry Pi obsługująca robota
+# Instrukcja uruchomienia robota Waveshare Pircaer z poziomu komputera z systemem Windows 10/ 11
+
+Do zdalnego sterowania robotem wymagany jest komputer podłączony do tej samej sieci WIFI co płytka Raspberry Pi obsługująca robota. Komputer ze starszą wersją windowsa wymaga instalacji zewnętrznnego oprogramowania do obsługi komunikacji za pomocą protokołu SSH.
 
 ## Uzyskanie adresu IP płytki
 Celem uzyskania adresu płytki należy uruchomić pojazd, podłączyć płytkę do monitora i w terminalu uzyskać adres za pomocą komendy: 

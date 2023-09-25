@@ -42,7 +42,9 @@ Pojazd powinien się uruchomić i sterowanie nim będzie możliwe z poziomu apli
 ```bash
 <adres IP płytki>:8887
 ```
-Do sterwaonia służą przyciski WASD 
+Aby ruszyć należy kliknąć spację. Do sterwaonia służą przyciski WASD. Za pomocą przycisku POHTO lub "P" n klawiaturze mozliwe jest wykonanie zdjęcie w rozdzielczości 1920x1080. 
+Kliknięcie przycisku RECORD lub "R" na klawiaturze uruchamia seknwecję robienia zdjęć w niskiej rozdzielczości co 1 skenudę bez zatrzymywania streama. Zdjęcia są zapisaywane lokalnie na RaspberryPikolejno w folderach mycar/NDT_photos i mycar/data/tub 
+
 
 ### Sterowanie za pomocą kontrolera 
 
@@ -51,6 +53,7 @@ Można teraz uruchomić pojazd w trybie sterowania kontrolerem:
 ```bash
 python manage.py drive --js
 ```
-Funkcje poszczególnych przycisków na kontrolerze opisuje poniższa grafika:
+Funkcje poszczególnych przycisków na kontrolerze opisuje poniższa grafika. Zmodyfikowano sterowanie tak, aby naciśnięcie przycisku X wywoływało zrobienie zdjęcia, identycznie jak w przypadku sterowania z klawiatury. 
+Należy pamiętać, że aby zrobić zdjęcie należy naciznąć przycisk X i gdy checmy jechać dalej kliknąć go ponownie:
 ![image](https://github.com/killpopmusic/itwl-donkeycar/assets/132206771/1abf9c00-4fe2-48aa-b7c3-b038340440a6)
 

@@ -3,7 +3,7 @@
 Do zdalnego sterowania robotem wymagany jest komputer podłączony do tej samej sieci WIFI co płytka Raspberry Pi obsługująca robota. Komputer ze starszą wersją windowsa wymaga instalacji zewnętrznnego oprogramowania do obsługi komunikacji za pomocą protokołu SSH.
 
 ## Uzyskanie adresu IP płytki
-Celem uzyskania adresu płytki należy uruchomić pojazd, podłączyć płytkę do monitora i w terminalu uzyskać adres za pomocą komendy: 
+Adres IP płytki podłaczonej do sieci powinien automatycznie wyśiwtlić się na ekranie OLED z tyłu pojazdu. Jeśli adres nie wyświetla się należy  podłączyć płytkę do monitora i w terminalu uzyskać adres za pomocą komendy: 
 ```bash
 ifconfig wlan0
 ```

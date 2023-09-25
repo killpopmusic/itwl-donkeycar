@@ -57,3 +57,14 @@ Funkcje poszczególnych przycisków na kontrolerze opisuje poniższa grafika. Zm
 Należy pamiętać, że aby zrobić zdjęcie należy naciznąć przycisk X i gdy checmy jechać dalej kliknąć go ponownie:
 ![image](https://github.com/killpopmusic/itwl-donkeycar/assets/132206771/1abf9c00-4fe2-48aa-b7c3-b038340440a6)
 
+### Przegląd zrobionych zdjęć
+
+Przejrzenie utwprzonych zdjęć będzie możliwe z poziomu nowej aplikacji webowej. Aby to zrobić należy po zakończeniu jazdy zamknąć działanie programu manage.py naciskając CTRL+C w wierszu polecenia.
+Następnie, cały czas znajdując się w folderze mycar należy wpisać komendę: 
+```bash
+python viewer.py
+```
+Utworzy ona wspomnianą aplikację pod adresem:
+```bash
+<adres IP płytki>:8080
+```

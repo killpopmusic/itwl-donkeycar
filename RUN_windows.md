@@ -62,6 +62,11 @@ Należy pamiętać, że aby zrobić zdjęcie należy naciznąć przycisk X i gdy
 Przejrzenie utwprzonych zdjęć będzie możliwe z poziomu nowej aplikacji webowej. Aby to zrobić należy po zakończeniu jazdy zamknąć działanie programu manage.py naciskając CTRL+C w wierszu polecenia.
 Następnie, cały czas znajdując się w folderze mycar należy wpisać komendę: 
 ```bash
+cd viewer
+```
+a następnie:
+
+```bash
 python viewer.py
 ```
 Utworzy ona wspomnianą aplikację pod adresem:

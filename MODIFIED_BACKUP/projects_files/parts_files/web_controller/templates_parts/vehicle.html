@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Applied chenges: the joystick, mode and pilot and selections of steering mode have been reemoved, start button has been placed on top  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+  <div class="container">
+    <div class="row"> 
+      <div class="col-md-12">
+        <div class="page-header">
+        </div>
+        <div class="form-inline">
+          <div class="form-group">
+            <label class="group-label">
+              Controls info
+              <a data-toggle="modal" class="btn btn-primary btn-xs" data-target="#aboutControlModes">
+                <span class="glyphicon glyphicon-info-sign"></span>
+              </a>
+            </label>
+            <br/>
+            <div class="form-group">
+             <button type="button" id="brake_button" class="btn btn-lg btn-success btn-block">START VEHICLE (SPACE)</button>
+               
+            </button>
+          </div>
+          </div>
+          <div class="form-group" style="max-width:30%;">
+            <label class="group-label">Max Throttle</label><br/>
+            <div class="form-group">
+              <select id="max_throttle_select" class="form-control">
+                <option disabled selected> Select Max Throttle </option>
+                {% for t in [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 100] %}
+                  <option value="{{ t / 100.0 }}">{{ t }}%</option>
+                {% end %}
+              </select>
+            </div>
+          </div>
+          <div class="form-group" style="max-width:30%;">
+            <label class="group-label">Throttle Mode</label><br/>
+            <div class="form-group">
+              <select id="throttle_mode_select" class="form-control">
+                <option value="user" selected>User</option>
+                <option value="constant">Constant (Selected Max)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-8 col-sm-5 col-md-10"><!-- center column -->
+        <div class="thumbnail">
+          <img id='mpeg-image', class='img-responsive' src="/video"/> </img>
+        </div>
+      </div><!-- end center column -->
+
+      <div class="col-xs-4 col-sm-2 col-md-2">
+        <div id="control-bars">
+          <label class="group-label">Angle &amp; Throttle</label>
+          <div>
+            <span class="glyphicon glyphicon-resize-horizontal pull-left"></span>
+            <div class="progress negative">
+              <div id="angle-bar-backward" class="progress-bar progress-bar-warning pull-right" role="progressbar" style="width: 0%;">
+              </div>
+            </div>
+            
+            <div class="progress positive">
+              <div id="angle-bar-forward" class="progress-bar progress-bar-info" role="progressbar" style="width: 0%;">
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <span class="glyphicon glyphicon-resize-vertical pull-left"></span>
+            <div class="progress negative">
+              <div id="throttle-bar-backward" class="progress-bar progress-bar-danger pull-right" role="progressbar" style="width: 0%;">
+              </div>
+            </div>
+            
+            <div class="progress positive">
+              <div id="throttle-bar-forward" class="progress-bar progress-bar-success" role="progressbar" style="width: 0%;">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form>
+          
+          <div class="form-group">
+            <button type="button" id="record_button" class="btn btn-info btn-block">
+              RECORD (R)
+            </button>
+          </div>
+          <div class="form-group">
+            <button type="button" id="photo_button" class="btn btn-info btn-block">
+               PHOTO (P)
+            </button>
+          </div>
+
+        </form>
+      </div>
+      
+
+  </div> <!-- END Container -->
+  
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="aboutControlModes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">About Control Modes</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            <strong>Keyboard</strong> Use the following keyboard keys:
+            <ul>
+              <li>Forward: <code>W</code></li>
+              <li>Reverse: <code>S</code></li>
+              <li>Left: <code>A</code> </li>
+              <li>Right: <code>D</code></li>
+            </ul>
+          </p>
+         
+          
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+    console.log( "document ready!" );
+    driveHandler.load()
+  });
+</script>
+
+{% end %}

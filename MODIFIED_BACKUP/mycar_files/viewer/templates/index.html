@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NDT Photo Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Available Folders:</h1>
+    <ul>
+        {% for folder in available_folders %}
+            <li><a href="/view/{{ folder }}">{{ folder }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

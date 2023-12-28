@@ -1,9 +1,63 @@
-<mxfile host="app.diagrams.net" modified="2023-12-28T13:29:11.617Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.15" etag="P-khyC9WkzFi5_h4wI2n" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-28T13:47:55.556Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="UjpVisM34HWCuQOwEFDW" version="22.1.15" type="github">
   <diagram name="Strona-1" id="VWceDHpOhwOKP3PvtIKb">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-24" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-2" value="&lt;b&gt;MAIN.JS&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="430" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-3" value="&lt;b&gt;PROGRAMY .HTML ORAZ .CSS&lt;/b&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="430" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-4" value="&lt;b&gt;MANAGE.PY&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="140" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="qf-DTjk1BbraweZyH_Bf-2" target="qf-DTjk1BbraweZyH_Bf-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="420" as="sourcePoint" />
+            <mxPoint x="610" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="qf-DTjk1BbraweZyH_Bf-3" target="qf-DTjk1BbraweZyH_Bf-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="420" as="sourcePoint" />
+            <mxPoint x="610" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-12" value="Odczyt działań operatora" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="640" y="488" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-13" value="Zmiana wyglądu interaktywnych&amp;nbsp;&lt;br&gt;części interfejsu" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="413" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-18" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="290" y="230" width="470" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-19" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;WEB.PY/ &lt;br&gt;TORNADO WEB SERVER&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="230" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="qf-DTjk1BbraweZyH_Bf-2" target="qf-DTjk1BbraweZyH_Bf-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="320" as="sourcePoint" />
+            <mxPoint x="610" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qf-DTjk1BbraweZyH_Bf-4" target="qf-DTjk1BbraweZyH_Bf-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="320" as="sourcePoint" />
+            <mxPoint x="610" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-22" value="Polecenia do wykonania&lt;br&gt;&amp;nbsp;dla pojazdu" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="310" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qf-DTjk1BbraweZyH_Bf-23" value="Informacje o zmianie &lt;br&gt;stanu pojazdu" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="310" width="130" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
